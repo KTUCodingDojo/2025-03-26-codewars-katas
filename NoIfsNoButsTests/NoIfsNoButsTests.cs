@@ -5,8 +5,8 @@
         [Fact]
         public void FluentAssertions_Should_Work()
         {
-            var sum = 2 + 2;
-            sum.Should().Be(4);
+            var sum = 2 + 3;
+            sum.Should().Be(5);
         }
 
         [Theory]
