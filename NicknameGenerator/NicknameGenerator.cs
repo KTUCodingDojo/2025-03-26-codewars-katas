@@ -8,18 +8,14 @@ namespace NicknameGenerator
 {
     public class NicknameGenerator
     {
-        public NicknameGenerator() 
-        {
-            
-        }
+        private static readonly char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
 
         public string GenerateNickname(string nickname)
         {
             if (nickname.Length < 4) return "Error: Name too short";
 
-            char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
-
-            if (vowels.Contains(nickname.ElementAt(2)))
+            var is3rdLetterVowel = vowels.Contains(nickname.ElementAt(2));
+            if (is3rdLetterVowel)
             {
                 return nickname.Substring(0, 4);
             }
