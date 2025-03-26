@@ -7,9 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NicknameGenerator", "Nickna
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NicknameGeneratorTests", "NicknameGeneratorTests\NicknameGeneratorTests.csproj", "{9D7F0885-B7AA-40A3-8142-7190BF161E26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoIfsNoButs", "NoIfsNoButs\NoIfsNoButs.csproj", "{A4FEAC2A-C583-4730-8B96-F511DBBA0633}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoIfsNoButs", "NoIfsNoButs\NoIfsNoButs.csproj", "{A4FEAC2A-C583-4730-8B96-F511DBBA0633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoIfsNoButsTests", "NoIfsNoButsTests\NoIfsNoButsTests.csproj", "{81DF2DB7-3C1D-41BB-B43A-2BA293AE9F73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoIfsNoButsTests", "NoIfsNoButsTests\NoIfsNoButsTests.csproj", "{81DF2DB7-3C1D-41BB-B43A-2BA293AE9F73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9DE22907-A5B6-4AB6-AF15-81D15844C72F}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

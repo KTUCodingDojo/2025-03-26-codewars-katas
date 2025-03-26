@@ -21,5 +21,21 @@ namespace NicknameGenerator.Tests
             var result = a + b;
             result.Should().Be(expected);
         }
+
+        [Fact]
+        public void Generate_3rdLetterShouldBeConsonant()
+        {
+            NicknameGenerator nicknameGenerator = new NicknameGenerator();
+            string nickname = nicknameGenerator.GenerateNickname("Robert");
+            nickname.Should().Be("Rob");
+        }
+
+        [Fact]
+        public void Generate_3rdLetterShouldBeVowel()
+        {
+            NicknameGenerator nicknameGenerator = new NicknameGenerator();
+            string nickname = nicknameGenerator.GenerateNickname("Jeannie");
+            nickname.Should().Be("Jean");
+        }
     }
 }
