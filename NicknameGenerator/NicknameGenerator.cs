@@ -15,14 +15,16 @@ namespace NicknameGenerator
 
         public string GenerateNickname(string nickname)
         {
+            if (nickname.Length < 4) return "Error: Name too short";
+
             char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
 
-            if (vowels.Contains(nickname.ElementAt(3)))
+            if (vowels.Contains(nickname.ElementAt(2)))
             {
-                return nickname.Substring(0, 3);
+                return nickname.Substring(0, 4);
             }
 
-            return nickname.Substring(0, 4);
+            return nickname.Substring(0, 3);
         }
     }
 }
