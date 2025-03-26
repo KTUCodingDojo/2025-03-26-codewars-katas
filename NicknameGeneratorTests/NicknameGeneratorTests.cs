@@ -4,7 +4,7 @@ namespace NicknameGenerator.Tests
 {
     public class NicknameGeneratorTests
     {
-
+        NicknameGenerator nicknameGenerator = new NicknameGenerator();
         [Fact]
         public void FluentAssertions_Should_Work()
         {
@@ -22,20 +22,35 @@ namespace NicknameGenerator.Tests
             result.Should().Be(expected);
         }
 
-        [Fact]
-        public void Generate_3rdLetterShouldBeConsonant()
+        [Theory]
+        [InlineData("Robert", "Rob")]
+        [InlineData("Kimberly", "Kim")]
+        [InlineData("Samantha", "Sam")]
+        public void Generate_When3rdLetterIsConsonant_ReturnFirst3Letters(string name, string expected)
         {
-            NicknameGenerator nicknameGenerator = new NicknameGenerator();
-            string nickname = nicknameGenerator.GenerateNickname("Robert");
-            nickname.Should().Be("Rob");
+            string nickname = nicknameGenerator.GenerateNickname(name);
+            nickname.Should().Be(expected);
         }
 
-        [Fact]
-        public void Generate_3rdLetterShouldBeVowel()
+        [Theory]
+        [InlineData("Jeannie", "Jean")]
+        [InlineData("Douglas", "Doug")]
+        [InlineData("Gregory", "Greg")]
+        public void Generate_When3rdLetterIsVowel_ReturnFirst4Letters(string name, string expected)
         {
-            NicknameGenerator nicknameGenerator = new NicknameGenerator();
-            string nickname = nicknameGenerator.GenerateNickname("Jeannie");
-            nickname.Should().Be("Jean");
+            string nickname = nicknameGenerator.GenerateNickname(name);
+            nickname.Should().Be(expected);
+        }
+
+        [Theory]
+        [InlineData("Abc")]
+        [InlineData("Ab")]
+        [InlineData("A")]
+        [InlineData("")]
+        public void Generate_StringLengthLessThan4(string nameTooShort)
+        {
+            string nickname = nicknameGenerator.GenerateNickname(nameTooShort);
+            nickname.Should().Be("Error: Name too short");
         }
     }
 }
