@@ -10,13 +10,15 @@
         }
 
         [Theory]
-        [InlineData(1, 2, 3)]
-        [InlineData(5, 7, 12)]
-        [InlineData(-1, 1, 0)]
-        public void Xunit_Theory_Should_Work(int a, int b, int expected)
+        [InlineData(5, 4, "5 is greater than 4")]
+        [InlineData(-4, -7, "-4 is greater than -7")]
+        [InlineData(2, 2, "2 is equal to 2")]
+        [InlineData(1, 2, "1 is smaller than 2")]
+        public void Number_IsGreaterThan(int a, int b, string expected)
         {
-            var result = a + b;
+            string result = Comparator.Compare(a, b);
             result.Should().Be(expected);
         }
+
     }
 }
