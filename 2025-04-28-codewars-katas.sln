@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9DE22907-A5B6-4AB6-AF15-81D15844C72F}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovingZeros", "NicknameGenerator\MovingZeros.csproj", "{D3604B0F-25C5-49F2-96D4-735F42FE3724}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovingZerosTests", "NicknameGeneratorTests\MovingZerosTests.csproj", "{25A523E8-48A6-4C6E-A9CA-8E8A69FE58D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3604B0F-25C5-49F2-96D4-735F42FE3724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3604B0F-25C5-49F2-96D4-735F42FE3724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3604B0F-25C5-49F2-96D4-735F42FE3724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3604B0F-25C5-49F2-96D4-735F42FE3724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25A523E8-48A6-4C6E-A9CA-8E8A69FE58D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25A523E8-48A6-4C6E-A9CA-8E8A69FE58D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25A523E8-48A6-4C6E-A9CA-8E8A69FE58D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25A523E8-48A6-4C6E-A9CA-8E8A69FE58D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98515AFB-1C83-4ACE-BA28-265EFBEC5E93}
+	EndGlobalSection
+EndGlobal

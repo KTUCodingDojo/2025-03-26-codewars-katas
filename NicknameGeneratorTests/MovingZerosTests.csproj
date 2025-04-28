@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NoIfsNoButs\NoIfsNoButs.csproj" />
+    <ProjectReference Include="..\NicknameGenerator\MovingZeros.csproj" />
   </ItemGroup>
 
 </Project>
